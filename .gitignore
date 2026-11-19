@@ -1,0 +1,16 @@
+# Generated data (recreate it by running the notebooks)
+data/generated/*
+!data/generated/.gitkeep
+outputs/*
+!outputs/.gitkeep
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Editors / OS
+.vscode/
+.DS_Store
+Thumbs.db

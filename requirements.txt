@@ -1,0 +1,9 @@
+pandas
+numpy
+pyarrow
+holidays
+matplotlib
+jinja2
+jupyter
+sqlalchemy
+psycopg2-binary
