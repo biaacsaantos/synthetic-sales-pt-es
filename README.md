@@ -6,7 +6,7 @@ Synthetic daily sales of **Cume & Costa**, a fictitious chain of sports and outd
 
 The goal is a realistic, reproducible dataset for analysis in **Power BI**, **SQL (PostgreSQL + PostGIS)** and **forecasting**, with patterns that can be explained: growth, expansion to Spain, seasonality by product, regional differences, weekday and opening rules, promotions and product launches.
 
-**Tools:** Python · pandas · NumPy · PostgreSQL + PostGIS (SQL) · Power BI
+**Tools:** Python | pandas | NumPy | PostgreSQL | PostGIS (SQL) | Power BI
 
 ---
 
