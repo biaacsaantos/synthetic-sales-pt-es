@@ -14,7 +14,7 @@ The goal is a realistic, reproducible dataset for analysis in **Power BI**, **SQ
 
 ```mermaid
 flowchart LR
-    R[Reference project<br/>postal codes · localities · NUTS] --> A[01 Dimensions]
+    R[Reference project<br/>postal codes - localities - NUTS] --> A[01 Dimensions]
     A --> B[02 Sales generation]
     B --> C[03 Validation]
     B --> D[04 Export and database]
