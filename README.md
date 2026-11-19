@@ -1,4 +1,4 @@
-# Synthetic Sales – Sports & Outdoor Retail (Portugal and Spain)
+# Synthetic Sales: Sports & Outdoor Retail (Portugal and Spain)
 
 Synthetic daily sales of **Cume & Costa**, a fictitious chain of sports and outdoor stores in Portugal and Spain, from 2021 to 2025: 52 stores, 33 products in six categories and about 1.4 million sales rows.
 
@@ -18,7 +18,7 @@ flowchart LR
     A --> B[02 Sales generation]
     B --> C[03 Validation]
     B --> D[04 Export and database]
-    D --> E[CSV · Parquet]
+    D --> E[CSV | Parquet]
     D --> F[(PostgreSQL<br/>schema sales)]
 ```
 
