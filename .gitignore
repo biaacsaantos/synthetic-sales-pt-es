@@ -1,8 +1,10 @@
 # Generated data (recreate it by running the notebooks)
 data/generated/*
 !data/generated/.gitkeep
+# Outputs: only the Parquet files are published (small); the CSV files are too large
 outputs/*
 !outputs/.gitkeep
+!outputs/parquet/
 
 # Python / Jupyter
 __pycache__/

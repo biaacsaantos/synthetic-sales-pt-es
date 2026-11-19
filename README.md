@@ -74,14 +74,14 @@ All the parameters are in one cell of notebook 02 and in `src/config.py`. With t
    Or with pip: `pip install -r requirements.txt`
 3. Run the notebooks in order, from 01 to 04. Notebook 04 needs PostgreSQL + PostGIS and, to link the stores to the postal codes, notebook 08 of the reference project.
 
-The generated data is not stored in the repository (see `.gitignore`): it is recreated by the notebooks.
+The final tables are included in Parquet format in `outputs/parquet/`. The CSV files and the intermediate data are not stored in the repository (see `.gitignore`): they are recreated by the notebooks.
 
 ## Outputs
 
 | Folder | Content |
 |---|---|
 | `outputs/csv/` | The five tables in CSV |
-| `outputs/parquet/` | The same tables in Parquet (about 10× smaller; Power BI reads it with **Get data → Parquet**) |
+| `outputs/parquet/` | The same tables in Parquet (about 10× smaller; Power BI reads it with **Get data → Parquet**). **Included in this repository**, so the data can be used without running the notebooks |
 | PostgreSQL, schema `sales` | Star schema with primary and foreign keys, business rules (`CHECK`) and a spatial index on the stores |
 
 ## Example SQL analyses (notebook 04)
@@ -98,7 +98,7 @@ The generated data is not stored in the repository (see `.gitignore`): it is rec
 ├── data/generated/   # generated tables (Parquet, not in the repository)
 ├── docs/             # data model diagram
 ├── notebooks/        # 01 to 04, run in order
-├── outputs/          # csv/, parquet/ (not in the repository)
+├── outputs/          # parquet/ (included) and csv/ (created by the notebooks)
 ├── sql/              # star schema DDL and constraints
 ├── src/
 │   ├── config.py     # parameters: period, number of stores, brand, seed
